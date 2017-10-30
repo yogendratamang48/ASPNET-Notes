@@ -11,21 +11,21 @@ Tables give structure in which we put our real world data. Records are inserted 
 Queries are language to interact with the database. We perform queries to **C**reate, **R**ead, **U**pdate and **D**eleting records of the database.
 ### *Usefule Examples* ###
 Consider we have table 'Student' like below:  
-|StudentID|FullName|Roll|Age|
-|---------|----|----|--|
-|1|Sulav poudel|ELX-014-440|22|
+|StudentID |FullName |Roll |Age |
+|----------|---------|-----|----|
+|1|Sulav Poudel|ELX-014-440|22|
 |2|Dhiroj Kumar Majhi|ELX-014-412|23|
 |3|Sampurna Khanal|ELX-014-435|24|
-|4|Renuka kshetri|ELX-014-430|18|
+|4|Renuka Kshetri|ELX-014-430|18|
 |5|Bibek khanal|ELX-014-410|26|
 |6|Purna Kalyan Shakya|ELX-014-428|17|
 |7|Niraj Budhathoki|ELX-014-416|24|
-|8|Manish kshettri |ELX-014-414|21|
-|10|Utsab uprety |ELX-014-442|19|
-|11|Samana devkota|ELX-014-434|20|
-|12|Subarna rai |ELX-014-441|21|
-|13|Ravi timsina |ELX-014-446|19|
-|14|Ayusha gartaula |ELX-014-409|20|
+|8|Manish Kshettri |ELX-014-414|21|
+|10|Utsab Uprety |ELX-014-442|19|
+|11|Samana Devkota|ELX-014-434|20|
+|12|Subarna Rai |ELX-014-441|21|
+|13|Ravi Timsina |ELX-014-446|19|
+|14|Ayusha Gartaula |ELX-014-409|20|
 |1003|Ashish Thapamagar|ELX-014-407|22|
 
 #### *SELECT* Query ###
