@@ -11,8 +11,8 @@ Tables give structure in which we put our real world data. Records are inserted 
 Queries are language to interact with the database. We perform queries to **C**reate, **R**ead, **U**pdate and **D**eleting records of the database.
 ### *Usefule Examples* ###
 Consider we have table 'Student' like below:  
-|StudentID |FullName |Roll |Age |
-| -------- | ------- | --- | --- |
+| StudentID | FullName | Roll | Age |
+| --------- | -------- | ---- | --- |
 |1|Sulav Poudel|ELX-014-440|22|
 |2|Dhiroj Kumar Majhi|ELX-014-412|23|
 |3|Sampurna Khanal|ELX-014-435|24|
