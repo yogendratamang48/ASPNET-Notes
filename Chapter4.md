@@ -29,11 +29,11 @@ Consider we have table 'Student' like below:
 |1003|Ashish Thapamagar|ELX-014-407|22|
 
 ### Table Test ###
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
+| StudentID | FullName | Rollnumber |
+| ------ | ----------- | ------ |
+| data   | path to data files to supply the data that will be passed into templates. | 24 |
+| engine | engine to be used for processing templates. Handlebars is the default. | 25|
+| ext    | extension to be used for dest files. | 26 |
 
 #### *SELECT* Query ###
 Select query is used to retrieve or read data from database.
