@@ -31,6 +31,7 @@ Queries are language to interact with the database. We perform queries to **C**r
 #### *SELECT* Query ###
 Select query is used to retrieve or read data from database.
 example:  
+___
 >   `SELECT * FROM Student;`  
 This query will return all data with all attributes
  ###  Result ###
@@ -50,6 +51,7 @@ This query will return all data with all attributes
 |13|Ravi Timsina |ELX-014-446|19|
 |14|Ayusha Gartaula |ELX-014-409|20|
 |1003|Ashish Thapamagar|ELX-014-407|22| 
+___
 >   `SELECT FullName, Roll FROM Student;`  
 This query retrieves all students but only two columns FullName and Roll  
 ### Result ###
@@ -69,5 +71,6 @@ This query retrieves all students but only two columns FullName and Roll
 |Ravi Timsina |ELX-014-446||
 |Ayusha Gartaula |ELX-014-409|
 |Ashish Thapamagar|ELX-014-407|
+___
 >   `SELECT * FROM Student WHERE Age>20;`
 
