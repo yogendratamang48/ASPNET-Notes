@@ -29,12 +29,22 @@ Consider we have table 'Student' like below:
 |1003|Ashish Thapamagar|ELX-014-407|22|
 
 ### Table Test ###
-| StudentID | FullName | Rollnumber |
-| ------ | ----------- | ------ |
-| data   | path to data files to supply the data that will be passed into templates. | 24 |
-| engine | engine to be used for processing templates. Handlebars is the default. | 25|
-| ext    | extension to be used for dest files. | 26 |
-
+| StudentID | FullName | Rollnumber | Age |
+| ------ | ----------- | ------ | ---- |
+| 1 | Sulav Poudel | ELX-014-440 | 22 |
+|2|Dhiroj Kumar Majhi|ELX-014-412|23|
+|3|Sampurna Khanal|ELX-014-435|24|
+|4|Renuka Kshetri|ELX-014-430|18|
+|5|Bibek khanal|ELX-014-410|26|
+|6|Purna Kalyan Shakya|ELX-014-428|17|
+|7|Niraj Budhathoki|ELX-014-416|24|
+|8|Manish Kshettri |ELX-014-414|21|
+|10|Utsab Uprety |ELX-014-442|19|
+|11|Samana Devkota|ELX-014-434|20|
+|12|Subarna Rai |ELX-014-441|21|
+|13|Ravi Timsina |ELX-014-446|19|
+|14|Ayusha Gartaula |ELX-014-409|20|
+|1003|Ashish Thapamagar|ELX-014-407|22|
 #### *SELECT* Query ###
 Select query is used to retrieve or read data from database.
 example:  
