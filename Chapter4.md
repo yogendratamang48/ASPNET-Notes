@@ -9,9 +9,31 @@ For eg. If you are going to make database for school. There can be a table 'Stud
 Tables give structure in which we put our real world data. Records are inserted into table after the structure is created.
 #### Queries
 Queries are language to interact with the database. We perform queries to **C**reate, **R**ead, **U**pdate and **D**eleting records of the database.
-|SN | QUERY | Example | Comments |
-|---|-------|---------|----------|
-|1 | SELECT | SELECT FullName from Student | Retrieving data |
+### *Usefule Examples* ###
+Consider we have table 'Student' like below:
+|StudentID|FullName|Roll|Age|
+|---------|----|----|--|
+|1|Sulav poudel|ELX-014-440|22|
+|2|Dhiroj Kumar Majhi|ELX-014-412|23|
+|3|Sampurna Khanal|ELX-014-435|24|
+|4|Renuka kshetri|ELX-014-430|18|
+|5|Bibek khanal|ELX-014-410|26|
+|6|Purna Kalyan Shakya|ELX-014-428|17|
+|7|Niraj Budhathoki|ELX-014-416|24|
+|8|Manish kshettri |ELX-014-414|21|
+|10|Utsab uprety |ELX-014-442|19|
+|11|Samana devkota|ELX-014-434|20|
+|12|Subarna rai |ELX-014-441|21|
+|13|Ravi timsina |ELX-014-446|19|
+|14|Ayusha gartaula |ELX-014-409|20|
+|1003|Ashish Thapamagar|ELX-014-407|22|
 
-
+#### *SELECT* Query ###
+Select query is used to retrieve or read data from database.
+example:  
+>   *SELECT * FROM Student*  
+This query will return all data with all attributes
+  
+>   SELECT FullName, Roll FROM Student;  
+>   SELECT * FROM Student WHERE Age>20;
 
