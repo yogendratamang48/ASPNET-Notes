@@ -9,4 +9,9 @@ For eg. If you are going to make database for school. There can be a table 'Stud
 Tables give structure in which we put our real world data. Records are inserted into table after the structure is created.
 #### Queries
 Queries are language to interact with the database. We perform queries to **C**reate, **R**ead, **U**pdate and **D**eleting records of the database.
+|SN | QUERY | Example | Comments |
+|---|-------|---------|----------|
+|1 | SELECT | SELECT FullName from Student | Retrieving data |
+
+
 
