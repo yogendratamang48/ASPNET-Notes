@@ -21,9 +21,8 @@
     Compilation of .NET program is two step process: 
     * **First Phase**:CLI generation from .NET Aware compilers
     * **Second Phase**: Machine Code from JIT Compiler
-    ![Compilation Process](FirstPhase.jpg "First Phase Compilation")
-    ![Compilation Second](SecondPhase.jpg "Second Phase")  
-
+    ![Compilation Process](FirstPhase.jpg)
+    ![Compilation Second](SecondPhase.jpg)  
     Code Written in .NET aware Languages (C#, VB etc.) are compiled by .NET aware Compilers (C Sharp Compiler, Visual Basic Compiler etc.) and .Net Binary blob is created. .Net  binary blob is also termed as Assembly and it contains Common Immediate Language(CIL)* and Metadata. JIT** compilers compile CIL  codes to platform specific instructions. In this way compilation of .Net Code is done. 
     _*CIL is also termed as MicroSoft Intermediate Language(MSIL) or just Intermediate Language (IL)._
 _**Just In Time (JIT) or Jitters compiles IL into Machine code on the fly_
