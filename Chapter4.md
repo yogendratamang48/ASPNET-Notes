@@ -1,13 +1,13 @@
 ## Chapter 4 ADO.NET and Entity Framework
-### Database Fundamentals
+### 4.1 Database Fundamentals
 Database is organized collection of data. There are tables, views, queries, reports and other objects in database.
 Database Management System Software stores data so that it will be easy for us to retrieve, manipulate and produce information.
-### Core Concepts:
-#### Tables
+### 4.2 Core Concepts:
+#### 4.2.1 Tables
 Tables are real world entities represenation in the database. They have their own attributes. They are related to other entities through some relations. 
 For eg. If you are going to make database for school. There can be a table 'Student' (representing Students). The table may have attributes like age, roll number etc. Student table may be realted to other tables like Faculty, Teacher, Subject etc.
 Tables give structure in which we put our real world data. Records are inserted into table after the structure is created.
-#### Queries
+#### 4.2.2 Queries
 Queries are language to interact with the database. We perform queries to **C**reate, **R**ead, **U**pdate and **D**eleting records of the database.
 ### *Usefule Examples* ###
 | StudentID | FullName | Roll | Age |
@@ -27,8 +27,10 @@ Queries are language to interact with the database. We perform queries to **C**r
 |14|Ayusha Gartaula |ELX-014-409|20|
 |1003|Ashish Thapamagar|ELX-014-407|22|
 
+#### *4.2.2.1 INSERT * Query  
+This query is used to enter data in the tables
 
-#### *SELECT* Query ###
+#### *4.2.2.2 SELECT* Query ###
 Select query is used to retrieve or read data from database.
 example:  
 ___
@@ -53,7 +55,7 @@ This query will return all data with all attributes
 |1003|Ashish Thapamagar|ELX-014-407|22| 
 ___
 >   `SELECT FullName, Roll FROM Student;`  
-This query retrieves all students but only two columns FullName and Roll  
+This query retrieves all students but only two attributes: FullName and Roll  
 ### Result ###
 | FullName | Roll |
 | ------ | ----------- |
@@ -72,5 +74,7 @@ This query retrieves all students but only two columns FullName and Roll
 |Ayusha Gartaula |ELX-014-409|
 |Ashish Thapamagar|ELX-014-407|
 ___
->   `SELECT * FROM Student WHERE Age>20;`
+>   `SELECT * FROM Student WHERE Age>20;`  
+This query will result all students (with all attributes due to *) whose age is greater than 20.
+
 
