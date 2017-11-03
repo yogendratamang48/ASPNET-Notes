@@ -25,7 +25,8 @@ With this infomration, lets create our first database "nec.db"
 Go to your directory in Console and type in 
 >`D:\Sqlite> sqlite3 nec.db` 
 you will see your ouput like in figure below:  
-![Creating Database](CreateDB.png)
+![Creating Database](CreateDB.png)  
+
 Congratulations !! you have created your database now.  you are in sqlite command line tools and you can perform CRUD functionalities.
 
 1. **Creating Tables**  
