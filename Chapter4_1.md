@@ -7,10 +7,10 @@ Go to [this link](https://sqlite.org/download.html) , and download sqlite-tools 
 Unzip your downloaded file and move all files(sqldiff.exe, sqlite3.exe and sqlite3_analyzer.exe) to your appropriate location(For eg. I have moved all files in D:\SQlite)  
 Now lets open command prompt on directory containing those files and type in
 >>`D:\SQlite>sqlte3.exe`  
->>`SQLite version 3.20.1 2017-08-24 16:21:36
-Enter ".help" for usage hints.
-Connected to a transient in-memory database.
-Use ".open FILENAME" to reopen on a persistent database.`
+>>`SQLite version 3.20.1 2017-08-24 16:21:36`
+`Enter ".help" for usage hints.`
+`Connected to a transient in-memory database.`
+`Use ".open FILENAME" to reopen on a persistent database.`
 >> `sqlite>`  
 Congratulations! you have successfully completed installation of Sqlite and got access to Command line tools.
 1. **Creating Database**  
@@ -20,7 +20,7 @@ Before creating database, you have to understand what type of data does sqlite s
 * Real
 * Text
 * Blob  
-With this infomration, lets create our first database "School.db"
+With this infomration, lets create our first database "nec.db"
 ##### Creating Database #####  
 Go to your directory in Console and type in 
 >`D:\Sqlite> sqlite3 nec.db` 
