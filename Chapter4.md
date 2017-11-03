@@ -76,5 +76,6 @@ This query retrieves all students but only two attributes: FullName and Roll
 ___
 >   `SELECT * FROM Student WHERE Age>20;`  
 This query will result all students (with all attributes due to *) whose age is greater than 20.
-
+___
+> 
 
