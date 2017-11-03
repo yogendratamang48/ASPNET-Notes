@@ -33,11 +33,11 @@ Ok, lets create your first table student with columns: FullName, Roll, Age.
 >>`CREATE TABLE Student(StudentID INT PRIMARY KEY NOT NULL, FullName TEXT NOT NULL, Roll TEXT NOT NULL, Age INT);`
 1. **Inserting Data in Table(C)**
  Now, Lets insert some data:  
- >`INSERT INTO Student(StudentID, FullName, Roll, Age) Values(1, "Dhiroj Kumar Majhi", "NEC-014-412", 23);`  
+ >`INSERT INTO Student(StudentID, FullName, Roll, Age) VALUES(1, "Dhiroj Kumar Majhi", "NEC-014-412", 23);`  
 
- >`INSERT INTO Student(StudentID, FullName, Roll, Age) Values(1, "Sampurna Khanal", "NEC-014-435", 20);`  
+ >`INSERT INTO Student(StudentID, FullName, Roll, Age) VALUES(2, "Sampurna Khanal", "NEC-014-435", 20);`  
 
- >`INSERT INTO Student(StudentID, FullName, Roll, Age) Values(1, "Dhiroj Kumar Majhi", "NEC-014-412", 23);`
+ >`INSERT INTO Student(StudentID, FullName, Roll, Age) VALUES(3, "Dhiroj Kumar Majhi", "NEC-014-412", 23);`
 1. **Reading Data(R)**  
  You can read your data using `SELECT` Statements:
  >`SELECT * FROM Student;`
@@ -47,7 +47,7 @@ You can impost conditions
 > `SELECT * FROM Student WHERE Age>20;`
 1. **Updating Data(U)**
 > `UPDATE Student SET Age=26 WHERE StudentID=2;`
-1. **Deleting Data(D)** 
+1. **Deleting Data(D)**
 > `DELETE FROM Student where StudentID=2;`
 
 Congratulations guys !!! You have successfully completed quickstart hands on SQLite Database. Play with SQL to get fluent on 
