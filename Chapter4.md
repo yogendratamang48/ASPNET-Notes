@@ -28,7 +28,8 @@ Queries are language to interact with the database. We perform queries to **C**r
 |1003|Ashish Thapamagar|ELX-014-407|22|
 
 #### *4.2.2.1 INSERT * Query  
-This query is used to enter data in the tables
+This query is used to enter data in the tables  
+(Look into Chapter 4_1 file)  
 
 #### *4.2.2.2 SELECT* Query ###
 Select query is used to retrieve or read data from database.
@@ -75,7 +76,8 @@ This query retrieves all students but only two attributes: FullName and Roll
 |Ashish Thapamagar|ELX-014-407|
 ___
 >   `SELECT * FROM Student WHERE Age>20;`  
-This query will result all students (with all attributes due to *) whose age is greater than 20.
+This query will result all students (with all attributes due to *) whose age is greater than 20
 ___
-> 
+#### Update and Delete Query ####  
+**Update** Query is used to update record in the table. **Delete** is used to remove record from the table. (For example look into Chapter 4_1 File)
 
