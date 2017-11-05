@@ -80,4 +80,74 @@ This query will result all students (with all attributes due to *) whose age is 
 ___
 #### Update and Delete Query ####  
 **Update** Query is used to update record in the table. **Delete** is used to remove record from the table. (For example look into Chapter 4_1 File)
+#### ADO.NET ####  
+![ADO.NET Architecure](ado.JPG)  
+ADO.NET is part of **Base Base Class Libraries (BCL)** used for access and modification of data stored data in Database Systems(Mostly Relational). It provides set of classes that exposes data access services.  
+ADO.NET Components:  
+ * .NET Framework data providers  
+ It is used for connecting to database, executing commands, and retrieving results. Data providers mainly contains following four core objects:
+    * Connection  
+    it establishes a connection to specific datasource
+    * Command  
+    Executes commands against the datasource.
+    * DataReader  
+    Reads data from the datasource in read-only fashion.
+    * DataAdapter  
+    It provides bridge between the Dataset oject and datasource. It populates a dataset and resolves updates with datasource.
+ * DataSet  
+ The dataset is memory based relational represenation of data. It is part of disconnected environment. It consists of one or more data table (DataTable) objects made up of rows (DataRow) and Column (DataColun) of data
+ *  
+Code Snippet  
 
+```
+using System;
+using Microsoft.Data.Sqlite;
+
+namespace ConsoleSQLite
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+            //1. Create Connection and provide datasource file or location
+            Console.WriteLine("Creating Student Table");
+            try {
+                CreateConnection();
+                Console.WriteLine("Hola!!! Your table is crated !!!");
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Nooo !!!! Sorry Something Went Wrong");
+
+            }
+
+            // 2. Write down your query
+            // 3. Create your command object and pass connection and query to it. Execute it.
+            // 4. Perform Read Operation using DataReader if needed
+           
+        }
+
+        private static void CreateConnection()
+        {
+           using (var connection=new SqliteConnection("DataSource=abc.db"))
+           {
+               string query="CREATE TABLE Student(StudentID INT PRIMARY KEY NOT NULL, FullName TEXT NOT NULL, Roll TEXT NOT NULL, Age INT)";
+               // Create New Command Object using the connection.
+               var command=connection.CreateCommand();
+               // Send the query to commandText property
+               command.CommandText=query;
+               //Open Connection
+               connection.Open();
+               //Execute your command
+               command.ExecuteNonQuery();
+        }
+    }
+}
+
+``` 
+ 
+### References ###
+1. https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers
+1. https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-architecture
+1. http://asp.net-informations.com/ado.net/ado-architecture.htm
