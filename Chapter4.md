@@ -143,6 +143,7 @@ namespace ConsoleSQLite
                command.ExecuteNonQuery();
         }
     }
+    }
 }
 
 ``` 
