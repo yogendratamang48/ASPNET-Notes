@@ -99,7 +99,7 @@ ADO.NET Components:
  *  
 Code Snippet  
 
-```
+```cs
 using System;
 using Microsoft.Data.Sqlite;
 
