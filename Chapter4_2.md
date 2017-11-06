@@ -39,7 +39,10 @@ private static void CreateConnection()
         {
            using (var connection=new SqliteConnection("DataSource=abc.db"))
            {
-               string query="CREATE TABLE Student(StudentID INT PRIMARY KEY NOT NULL, FullName TEXT NOT NULL, Roll TEXT NOT NULL, Age INT)";
+               string query = "CREATE TABLE Student("
+                            +"StudentID INT PRIMARY KEY NOT NULL," 
+                            + "FullName TEXT NOT NULL,"
+                            + "Roll TEXT NOT NULL, Age INT)";
                // Create New Command Object using the connection.
                var command=connection.CreateCommand();
                // Send the query to commandText property
