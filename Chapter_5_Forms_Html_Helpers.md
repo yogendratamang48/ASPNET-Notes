@@ -39,6 +39,9 @@ This displays unordered list of all validation errors in the `ModelState` diciti
     This return `<label />` element using the string parameter to determine rendered text and for attribute value.
     * @Html.DropDownList and @Html.ListBox  
     Both of these return `<select />` element. `DropDownList` allows you to select single element while `Listbox` allows you to select multiple values.
+    * Other Input helpers: `@Html.Hidden`, `@Htm.RadioButton`, `@Html.Password`, `@Html.Checkbox`.
+* Rendering Helpers  
+These helpers produce links to other resources inside an application. Examples: `@Html.ActionLink` and `@Html.RouteLink`
 * Strongly Typed Helpers  
 with strongly typed helpers, you pass a lambda expression to specify a model property for rendering.
 They have same name as other helpers but with `For` suffix. Examples: `@Html.TextBoxFor`, `@Html.LabelFor`, `@Html.DropDownListFor` etc.
