@@ -30,22 +30,22 @@ A set of classes that handles communication from the use, overall application fl
 * ViewBags are useful if you want to send tiny bit of data from the controller to the view.
 * They are can be sent in controller method using ViewBag keyword or in View inside @{ } block.
 * Example (Sending data from Controller to View):
->```cs
+>``cs
 public ActionResult About()
 {
  ViewBag.Message = "Hello Everyone";
  return View();
 }
-```
+``
 * Corresponding View may be:
->```
+>``
 @{
 ViewBag.Title = "Elective";
 
 }
 <h2>@ViewBag.Title</h2>
 <h2>@ViewBag.Message</h2>
-```
+``
 ##### Disadvantages of ViewBag
 * Type Conversion needed
 * If used dynamic keyword, IntelliSensce is lost
@@ -54,7 +54,7 @@ ViewBag.Title = "Elective";
 * This gives advantage of IntelliSense, compiler checking.
 * You can pass in model via View Overloading in Controller Method
 * Example:
->```cs
+>``cs
 public ActionResult List()
 {
     var students = new List<Student>();
@@ -64,7 +64,7 @@ public ActionResult List()
     }
     return View(students);
 }
-```
+``
 * Corresponding View may be:
 >```html
 @model IEnumerable<NECProject.Models.Student>
