@@ -29,8 +29,8 @@ A set of classes that handles communication from the use, overall application fl
 ##### Passing data using ViewBag 
 * ViewBags are useful if you want to send tiny bit of data from the controller to the view.
 * They are can be sent in controller method using ViewBag keyword or in View inside @{ } block.
-* Example (Sending data from Controller to View):
->```cs
+* Example (Sending data from Controller to View):  
+```cs
 public ActionResult About()
 {
 ViewBag.Message = "Hello Everyone";
@@ -38,14 +38,14 @@ return View();
 }
 ```
 * Corresponding View may be:
->``
+```html
 @{
 ViewBag.Title = "Elective";
 
 }
 <h2>@ViewBag.Title</h2>
 <h2>@ViewBag.Message</h2>
-``
+```
 ##### Disadvantages of ViewBag
 * Type Conversion needed
 * If used dynamic keyword, IntelliSensce is lost
@@ -54,7 +54,7 @@ ViewBag.Title = "Elective";
 * This gives advantage of IntelliSense, compiler checking.
 * You can pass in model via View Overloading in Controller Method
 * Example:
->``cs
+```cs
 public ActionResult List()
 {
     var students = new List<Student>();
@@ -64,9 +64,9 @@ public ActionResult List()
     }
     return View(students);
 }
-``
+```
 * Corresponding View may be:
->```html
+```html
 @model IEnumerable<NECProject.Models.Student>
 <ul>
 @foreach (Student s in Model) {
@@ -76,30 +76,25 @@ public ActionResult List()
 ##### ViewData and ViewBag
 * You can send data from controllers to views using ViewDataDicitionary(specialized dicitionary class) called __ViewData__.
 * You can set/read values to the ViewData dicitionary using standard dicitionary sytanx, as follows:
->```cs
-ViewData["CollegeName"] = "Nepal Engineering College";
-```
+>`ViewData["CollegeName"] = "Nepal Engineering College";`
 * ViewBag is Syntactic sugar(dot[.] notation) that some people prefer over the dicitionary syntax.
 * ViewBag is dynamic wrapper around ViewData. It allows you to set values in dot notation like this:
 >``` ViewBag.CollegeName = "Nepal Engineering College";```
 * Main differences between __ViewBag__ and __ViewData__ are:
     * __ViewBag__ works only when the key you are using is a valid C# indentifier.
     * You can not use __ViewBag__ to access data set by __ViewData__ in following code.
-    >```
-    ViewData["Key With Spaces"] = "Value of Key";
-    ```
+    >` ViewData["Key With Spaces"] = "Value of Key";`
     * You can not pass in dynamic values as parameters to extension methods.
-    * Example: The following line will fail. To work around this either use `ViewData["Name"]` or cast the value to a specific type: `(string)ViewBag.Name`
-    >```
-    @Html.TextBox("name", ViewBag.Name)
-    ```
+    * Example: The following line will fail. To work around this either use `ViewData["Name"]` or cast the value to a specific type: `(string)ViewBag.Name`  
+    >`@Html.TextBox("name", ViewBag.Name) `
 #### ViewDataDicitionary
 * It is a specialized dicitionary class. It has additional `Model` property that allows you for a specific model object to be abailable to the view
 * You can take advantage of strong typing by sending view-specific `Model` from the `Controller`.
 #### View Models
 * These are view-specific Model class to obtain Strongly Typed Views.
 * Suppose you have Student Admission form, you want to bring dropdowns for interested faculties, address districts, completed education etc. General approach is sending main 'Model' from the controller class and others through ViewBag as follows:
->```public ActionResult StudentForm
+```cs
+public ActionResult StudentForm
 {
     Student s = new Student();
     ViewBag.Districts = DAL.GetDistricts();
@@ -108,7 +103,7 @@ ViewData["CollegeName"] = "Nepal Engineering College";
 }
 ```
 * Another approach may be to create View-specific model like:
->```
+```
 public class StudentFormModel
 {
    public IEnumerable<District> districts { get; set; }
@@ -118,7 +113,7 @@ public class StudentFormModel
 ```
 * This model is then passed from controller to view.
 * This gives benefits of a strongly typed view without changing `Model` class.
->```public ActionResult StudentForm
+```public ActionResult StudentForm
 {
     StudentFormModel s = new StudentFormModel();
     View(s);
