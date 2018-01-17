@@ -32,11 +32,6 @@
 * What is authentication ? What are different Authentication options for .NET application?
 * What are different options for .NET application deployment ? Desribe any two.
 * What is IIS ?
-### Global Questions
-* How you can connect your application with database (eg. sqlite) and perform CRUD operations ?
-* Design simple database of a college for the purpose of taking exam form through online with following contraints:
-    * Tables should be less than 3
-    * 
 ### Short Notes on POOL
 * Model Binding
 * Data Validation
