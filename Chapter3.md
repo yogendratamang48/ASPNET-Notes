@@ -28,7 +28,7 @@ A set of classes that handles communication from the use, overall application fl
 #### ViewData and Strongly Typed Views 
 ##### Passing data using ViewBag 
 * ViewBags are useful if you want to send tiny bit of data from the controller to the view.
-* They are can be sent in controller method using ViewBag keyword or in View inside__ @{ }__ block.
+* They are can be sent in controller method using ViewBag keyword or in View inside @{ } block.
 * Example (Sending data from Controller to View:
 >```cs
 public ActionResult About()
