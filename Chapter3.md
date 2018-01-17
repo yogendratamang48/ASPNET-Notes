@@ -3,17 +3,18 @@
 * In 2002, ASP.NET 1.0 was released. Back then ASP.NET and Web Form were thought to be same thing. ASP.NET has always supported two layers of abstraction:
     * System.Web.UI
     * System.Web
-* In 2007, ASP.NET MVC Introduced
+* ASP.NET MVC Introduced in 2007 and became mainstream framework for builidng .NET web applications.
 
 #### 3.1 MVC Architecture
 * It is important architectural pattern in computer science for many years. It is powerful and elegant means of separating concerns within an applications. These concerns may be data access logic, display logic etc.
-* ASPNET MVCE is a framework for building web applications thay applies the general Model View Controller pattern to the ASP.NET framework.
-* MVC separates application into three main aspects:
+* ASPNET MVCE is a framework for building web applications that applies the general Model View Controller pattern to the ASP.NET framework.
+* MVC separates application into three main aspects:  
 i. Model  
-A set of classes that describes the data you are working with as well as business rules for how the data can be changed or manipulated. Models implement application's data domain logic.
+A set of classes that describes the data you are working with as well as business rules for how the data can be changed or manipulated. Models implement application's data domain logic.  
 ii. View  
-Defines how the application's User Interface(UI) will be displayed
-iii. Controller: A set of classes that handles communication from the use, overall application flow, and application-specific logic.
+Defines how the application's User Interface(UI) will be displayed  
+iii. Controller:  
+A set of classes that handles communication from the use, overall application flow, and application-specific logic.
 #### 3.2 Controller
 ##### Role
 * Conrollers are responsible for responding to user input, often making changes to the model in response to user input. They are concerned with the flow of application.working with data coming in and providing data going outto the relevant view.
@@ -124,3 +125,7 @@ public class StudentFormModel
     View(s);
 }
 ```
+##### View Engines
+* 
+#### 3.4 Models
+* Models
