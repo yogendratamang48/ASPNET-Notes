@@ -17,10 +17,9 @@ iii. Controller:
 A set of classes that handles communication from the use, overall application flow, and application-specific logic.
 #### 3.2 Controller
 ##### Role
-* Conrollers are responsible for responding to user input, often making changes to the model in response to user input. They are concerned with the flow of application, working with data coming in and providing data going out to the relevant view.
-* Rather than having a direct relationship between the URL and a file in a servers's disk, a relationship exists between the URL and a method on a controller class. 
-* Theses relationships are described by Action Methods.
-* The controller sits infront of every-thing except the routing subsystem.
+Conrollers are responsible for responding to user input, often making changes to the model in response to user input. They are concerned with the flow of application, working with data coming in and providing data going out to the relevant view. Rather than having a direct relationship between the URL and a file in a servers's disk, a relationship exists between the URL and a method on a controller class. 
+ Theses relationships are described by Action Methods.
+ The controller sits infront of every-thing except the routing subsystem.
 #### 3.3 Views
 * View is what users see when they use your application.
 * After controller has executed the appropriate logic for the requested URL, it delegates the display to the view.
