@@ -17,17 +17,16 @@ iii. Controller:
 A set of classes that handles communication from the use, overall application flow, and application-specific logic.
 #### 3.2 Controller
 ##### Role
-* Conrollers are responsible for responding to user input, often making changes to the model in response to user input. They are concerned with the flow of application.working with data coming in and providing data going outto the relevant view.
+* Conrollers are responsible for responding to user input, often making changes to the model in response to user input. They are concerned with the flow of application, working with data coming in and providing data going out to the relevant view.
 * Rather than having a direct relationship between the URL and a file in a servers's disk, a relationship exists between the URL and a method on a controller class. 
 * Theses relationships are described by Action Methods.
 * The controller sits infront of every-thing except the routing subsystem.
 #### 3.3 Views
 * View is what users see when they use your application.
 * After controller has executed the appropriate logic for the requested URL, it delegates the display to the view.
-* Views are not themselves directly accessible. Instead, a view is always rendered by a controller, which provides the data to the view will render.
+* Views are not themselves directly accessible. Instead, a view is always rendered by a controller, which provides the data to the view.
 #### ViewData and Strongly Typed Views 
 ##### Passing data using ViewBag 
-```
 * ViewBags are useful if you want to send tiny bit of data from the controller to the view.
 * They are can be sent in controller method using ViewBag keyword or in View inside__ @{ }__ block.
 * Example (Sending data from Controller to View:
@@ -37,7 +36,7 @@ public ActionResult About()
  ViewBag.Message = "Hello Everyone";
  return View();
 }
-
+```
 * Corresponding View may be:
 >```html
 @{
