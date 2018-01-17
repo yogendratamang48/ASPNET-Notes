@@ -1,6 +1,7 @@
 ## Web Applications Basics
 #### Introduction ####  
 Web application is an application that can be accessed through web browser or a specialized user agent. a HTTP request is created for specific urls (call for action methods) that map to resources (text file, html file, audio, video etc.). The server renders and returns HTML pages to the client.  
+![Web application structure](arch1.png) 
 ##### HTTP Basics ####  
 HTTP is Application Layer Protocol for communicating between distributed systems World Wide Web(WWW) is based on HTTP. It is foundation of any data exchange on the web and a client-server protocol. It Provides standardized way for computers to communicate with each other.HTTP specification specifies how client has to send request and how server should response, thus providing rule for communication
 ##### HTTP Features: #####  
